@@ -16,7 +16,7 @@ function cadastrar() {
     })();
 }
 
-fetch("http://localhost:5000/get").then(res => res.json())
+fetch(apiUrl+"/get").then(res => res.json())
 .then(items => {
   items.map(item => {
     document.querySelector("tbody").innerHTML += `
